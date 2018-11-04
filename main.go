@@ -9,7 +9,7 @@ import (
 
 const (
 	neededSheetsId = `1RhUEggwqMzkc4HDCwQUUDRTWgFLwqMLxxCA-BERQEJM`
-	readRange = `November 2018!A14:F`
+	readRange = `November 2018!A26:F`
 	started_dir = `1GOiGA7lwqDxjK_qNEMOY8gsqbAb5TvS8`
 )
 
@@ -21,18 +21,19 @@ func errH(err error) {
 
 func copyTemplate(row []interface{}, drive *d.Service, sheets *s.Service) error {
 	template_id := ""
-	switch row[3] {
-	case "Human":
+	race := strings.ToLower(row[3].(string))
+	switch race {
+	case "human":
 		template_id = `1LsIuIb1__9F7ic5a4gRbO3o-Kxb3KuWt897hJjTcPXc`
-	case "Effendal":
+	case "effendal":
 		template_id = `1yzrrmNvVWdnEBkdu_BOST0apeIcMZYzW_Qz6Clo0bh8`
-	case "Half-Celestial":
+	case "half-celestial":
 		template_id = `1t3B_xSQiHd2XGf8m0QauNONMbXu5GR3y_unT3t-w1Bg`
-	case "Half-Demon":
+	case "half-demon":
 		template_id = `1xxmCdm1qUrsvDbem2E8KIJJ5rVAKlGX5XMrVKCyMSN4`
-	case "Half-Dragon":
+	case "half-dragon":
 		template_id = `1RpCKisjkQNsov48BkOzZcbkl7_ezgkC3Xy8ZPE7bYUQ`
-	case "Half-Fae":
+	case "half-fae":
 		template_id = `1Y5LepZqC0W6XzdHOwzHgr1z6YZohoBfR_5BNQUzS98Q`
 	}
 	nameSections := strings.Split(strings.TrimSpace(row[2].(string)), " ")
