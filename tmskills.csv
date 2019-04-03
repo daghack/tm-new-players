@@ -1,0 +1,279 @@
+#########
+# Flaws #
+#########
+Fractured Memory,-4,-,""
+Clouded Memory,-2,-,""
+Fading Memory,-2,-,""
+Oath Bound,-6,-,""
+Sovereign Zeal,-2,-,""
+Frail,-2,-,""
+
+##########
+# Traits #
+##########
+Magical Aptitude,4,-,""
+Prophetic Dreamer,6,-,""
+Military Experience,4:0,-,""
+Bardic Knowledge,4,-,""
+Nobility,6,-,""
+
+########################
+# Weapon Proficiencies #
+########################
+Short Weapons,1,-,""
+One-handed Weapons,2,"Short Weapons","1H Weapons"
+Two-handed Weapons,3,"One-handed Weapons","2H Weapons"
+Oversized Weapon Use,2,"Two-handed Weapons",""
+Thrown Weapons,2,-,""
+Bow and Arrow,3,-,""
+Two-weapon Fighting: Apprentice,3,-,"Two-weapon Fighting"
+Two-weapon Fighting: Journeyman,3,"Two-weapon Fighting: Apprentice",""
+Two-weapon Fighting: Master,3,"Two-weapon Fighting: Journeyman",""
+
+#######################
+# Armor Proficiencies #
+#######################
+Armored Training: Light,2,-,"Light Armor"
+Armored Training: Medium,2,"Armored Training: Light","Medium Armor"
+Armored Training: Heavy,2,"Armored Training: Medium","Heavy Armor"
+Small Shield,3,-,""
+Medium Shield,3,"Small Shield",""
+Helmet Mastery,2,-,""
+Visor Mastery,2,"Helmet Mastery",""
+
+#########################
+# General Combat Skills #
+#########################
+Toughness,3*5,-,""
+Dodge,6*0,-,""
+Willpower,6*0,-,""
+Parry,4*0,-,""
+Guardian,4,"Parry",""
+Stamina Training,2,-,""
+Great Stamina,4,"Stamina Training",""
+3-Damage Strike,3*0,-,""
+5-Damage Strike,6*0,-,""
+Stun,3*0,-,""
+
+#########################
+# Archery and Woodcraft #
+#########################
+Precision,7,"Bow and Arrow, 3-Damage Strike ×2",""
+Master Precision,7,"Precision, 5-Damage Strike ×2",""
+Ranged Disarm,*6,"Precision",""
+Volley Master,10,"Master Precision",""
+Tracking,3,-,""
+Mask Tracks,6,"Tracking",""
+Mask Tracks: Group,4,"Mask Tracks",""
+False Tracks,6,"Mask Tracks",""
+False Tracks: Group,6,"False Tracks",""
+Scouting,2,"Tracking",""
+
+####################
+# Officer Training #
+####################
+Sudden Motivation,1*0,-,""
+Inspirational Speech,2*0,-,""
+Defensive Instruction,4*0,"Parry",""
+Evasive Instruction,6*0,"Dodge",""
+Offensive Instruction,6*0,"5-Damage Strike",""
+Military Drill,10,"Defensive Instruction OR Evasive Instruction OR Offensive Instruction",""
+Self-Observation,4,"Defensive Instruction OR Evasive Instruction OR Offensive Instruction",""
+
+######################
+# The Art of Dueling #
+######################
+Disarm,4*0,-,""
+Feint,1*0,-,""
+Invoke Challenge,5,-,""
+Salute,4,-,""
+Stylish Hat,2,"Salute",""
+Cloak Fighting,6,-,""
+Witty Repartee,7,-,""
+Pure of Heart,3,"Special",""
+
+###########################
+# The School of Suffering #
+###########################
+Armored Forearms,6,-,""
+Armored Shins,9,-,""
+Pressure Point: Stun Arm,2*0,-,""
+Pressure Point: Stun Leg,2*0,-,""
+Pressure Point: Lesser Sleep,4*0,-,""
+Slow Bleeding,3,-,""
+Meditative Stillness,2,"Slow Bleeding",""
+Slow Death,3,"Meditative Stillness",""
+Torture Resistance,3*0,-,""
+Torture Immunity,4,"Torture Resistance x3",""
+
+######################
+# The Assassin's Art #
+######################
+Stealth Attack,6,"Short Weapons",""
+10-Damage Strike,8*0,"Short Weapons",""
+Studied Killer,6,"Stealth Attack",""
+Twist the Knife,10,"Stealth Attack, 10-Damage Strike",""
+Poisoned Ring,4,"Stealth Attack, Lore: Alchemy",""
+Shin Kick,3*0,"Stun",""
+Sand In Your Eyes,3*0,"Stun",""
+Hidden Weapon,3,"Short Weapons",""
+Leap,2*0,-,""
+Leap Attack,3*0,"Leap",""
+Rope Use,3,-,""
+
+####################################
+# The Honored Path of the Beserker #
+####################################
+Battle Rage,7*0,-,""
+Enduring Rage,6,-,""
+Brutal Anger,5,-,""
+Hatred,4,"Battle Rage",""
+Seething Hatred,4,"Hatred",""
+Berserker,10,"Seething Hatred",""
+Break Arm,5*0,-,""
+Break Leg,5*0,-,""
+Break Shield,5*0,"Two-handed Weapons",""
+
+########################
+# Healing and Religion #
+########################
+Examine Wounds,2,-,""
+Detect Poison,2,"Examine Wounds",""
+Detect Disease,2,"Examine Wounds",""
+Apply Pressure,1,"Examine Wounds",""
+Set Bone,3,"Apply Presure",""
+Bandage,4,"Set Bone",""
+Surgery,5,"Bandage, Lore: Anatomy",""
+Prayer,4,-,""
+Repentence,2,-,""
+
+####################
+# The Magical Arts #
+####################
+Mana Focus,1*0,"Magical Aptitude",""
+Apprentice Magic,6:,"Mana Focus x5, Lore",""
+Journeyman Magic,6:,"Mana Focus x10, Apprentice Magic:",""
+Master Magic,6:,"Mana Focus x15, Journeyman Magic:",""
+Grandmaster Magic,6:,"Mana Focus x20, Master Magic:",""
+Blade Casting,8,"Magical Aptitude",""
+Armored Casting,6,"Magical Aptitude",""
+Shield Casting,6,"Magical Aptitude",""
+Combat Mimic,4*0,"Blade Casting",""
+Internal Reserves,4,"Mana Focus x10",""
+Arcane Tutelage,10,"Grandmaster Magic: (Any Magical Art), Research",""
+
+################
+# Skullduggery #
+################
+Disguise,4,-,""
+Master Disguise,6,"Disguise",""
+Escape,3*0,-,""
+Poison Resistance,2*0,-,""
+Poison Immunity,4,"Poison Resistance x3",""
+Disarm Traps,5,-,""
+Set Traps,2*0,"Disarm Traps",""
+Lockpicking: Apprentice,4,-,"Lockpicking"
+Lockpicking: Journeyman,4,"Lockpicking: Apprentice",""
+Lockpicking: Master,4,"Lockpicking: Journeyman",""
+Lockpicking: Grandmaster,4,"Lockpicking: Master",""
+Gambling,2*0,-,""
+High Roller,6,"Gambling",""
+Torture,2*0,-,""
+
+#############
+# Knowledge #
+#############
+Literacy,4,-,""
+Lore,4:,-,""
+Research,6,"Literacy",""
+Archivist,6,"Research",""
+Appraise,2,-,""
+Alchemical Examination,3,"Lore: Alchemy",""
+
+#############
+# Influence #
+#############
+Economic Standing,4r4,-,""
+Military Standing,4r4,-,""
+Academic Standing,4r4,-,""
+Political Standing,4r4,-,""
+Underworld Standing,4r4,-,""
+
+#############
+# Gathering #
+#############
+Mining,3r4,-,""
+Herbalism,3r4,-,""
+Woodcutting,3r4,-,""
+Hunting,3r4,-,""
+Mercantile,3r4,-,""
+Black Market,3r4,-,""
+Entrepreneur,3r4,-,""
+
+##########################
+# Crafting--Metalworking #
+##########################
+
+####################
+# Crafting--Arcane #
+####################
+
+####################
+# Crafting--Edible #
+####################
+
+###################
+# Crafting--Other #
+###################
+
+#########################
+# Human-specific Skills #
+#########################
+Stipend,2r4,"Must be Human, plus Nobility or Military Experience",""
+Unburdened,3,"Must be Human",""
+Good Enough,4,"Must be Human",""
+Pillar of the Community,2,"Must be Human",""
+
+############################
+# Effendel-specific Skills #
+############################
+Effendal Senses,2,"Must be Effendal",""
+Effendal Agility,2,"Must be Effendal",""
+Patience,4,"Must be Effendal",""
+Weapon Master,6,"Must be Effendal",""
+
+############################
+# Half-Fae-specific Skills #
+############################
+Slippery,4,"Must be Half-Fae, Escape",""
+Magic-Resistant,5*0,"Must be Half-Fae",""
+Attractive Gesture,3*0,"Must be Half-Fae",""
+Repellent Gesture,3*0,"Must be Half-Fae",""
+Dominating Gesture,10*0,"Must be Half-Fae",""
+
+##################################
+# Half-Celestial-specific Skills #
+##################################
+Rallying Cry,3*0,"Must be Half-Celestial",""
+Healing Touch,6*0,"Must be Half-Celestial",""
+Resurrection,10*0,"Must be Half-Celestial",""
+
+##############################
+# Half-Demon-specific Skills #
+##############################
+Draining Touch,5,"Must be Half-Demon",""
+Abhorrent Sign,4*0,"Must be Half-Demon",""
+Captivating Gaze,10,"Must be Half-Demon",""
+
+###############################
+# Half-Dragon-specific Skills #
+###############################
+Natural Armor: (Rank 1-5),2*0,"Must be Half-Dragon",""
+Iron Stomach,4,"Must be Half-Dragon",""
+Thunderous Roar,4*0,"Must be Half-Dragon",""
+
+##########################
+# Hybrid-specific Skills #
+##########################
+Supernatural Strength,10,"Must be Half-Celestial, Half-Demon, or Half-Dragon",""
+Massive Strikes,4,"Supernatural Strength",""
