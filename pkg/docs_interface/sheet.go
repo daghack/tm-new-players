@@ -125,6 +125,11 @@ func (this *Sheet) AddColumnUpdate(columnName string) int {
 		}
 	}
 	cell := fmt.Sprintf("%s!%s1", this.sheet.Properties.Title, string(rune('A'+column)))
+	for _, ok := this.updates[cell]; ok; _, ok = this.updates[cell] {
+		cell = fmt.Sprintf("%s!%s1", this.sheet.Properties.Title, string(rune('A'+column)))
+		column += 1
+	}
+	fmt.Println(cell)
 	this.AddUpdate(cell, columnName)
 	return column
 }
@@ -152,6 +157,9 @@ func (this *Sheet) FetchRow(row int, s interface{}) error {
 		field := typeOf.Field(i)
 		tagSet := getFieldTags(field)
 		colname, ok := tagSet["column_name"]
+		if colname == "row" && field.Type.Kind() == reflect.Int {
+			valueOf.Field(i).SetInt(int64(row))
+		}
 		if !ok || field.Type.Kind() != reflect.String {
 			continue
 		}
@@ -160,8 +168,10 @@ func (this *Sheet) FetchRow(row int, s interface{}) error {
 			continue
 		}
 		cellData := ""
-		if this.sheet.Data[0].RowData[row-1].Values[col].UserEnteredValue != nil {
-			cellData = this.sheet.Data[0].RowData[row-1].Values[col].UserEnteredValue.StringValue
+		if len(this.sheet.Data[0].RowData[row-1].Values) > col {
+			if this.sheet.Data[0].RowData[row-1].Values[col].UserEnteredValue != nil {
+				cellData = this.sheet.Data[0].RowData[row-1].Values[col].UserEnteredValue.StringValue
+			}
 		}
 		valueOf.Field(i).SetString(cellData)
 	}

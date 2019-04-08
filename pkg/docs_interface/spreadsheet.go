@@ -47,3 +47,11 @@ func (this *Spreadsheet) Reload() error {
 	this.spreadsheet = spreadsheet
 	return nil
 }
+
+func (this *Spreadsheet) ListSheets() []string {
+	toret := []string{}
+	for _, sheet := range this.spreadsheet.Sheets {
+		toret = append(toret, sheet.Properties.Title)
+	}
+	return toret
+}
